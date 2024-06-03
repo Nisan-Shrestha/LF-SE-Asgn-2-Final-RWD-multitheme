@@ -4,11 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="proxima.css">
   </head>
   <body>
     <div class="container container--dark">
       <header class="hero">
         <div class="hero__image-container">
+          <!-- todo: add image src -->
           <img src="" alt="" class="hero__image" />
           <div class="hero__image-overlay"></div>
         </div>
@@ -45,13 +49,19 @@
             Commodo purus, eu sed suspendisse fermentum
           </p>
           <div class="hero_CTA-container">
-            <div class="button button--primary button--large"></div>
-            <div class="button button--secondary button--large"></div>
+            <div class="button button--primary button--large">Shop Now</div>
+            <div class="button button--secondary button--large">
+              <img src="" alt="" class="button__icon" />
+              Add to Cart
+            </div>
           </div>
         </div>
         <div class="hero__footer">
-          <div class="hero__CTA"></div>
+          <div class="hero__CTA">
+            <img src="" alt="" class="hero__CTA-icon" />
+          </div>
           <div class="hero__scroll-container grid">
+            <!-- todo: add cards -->
             <div class="card card--overflow">
               <img
                 src=""
@@ -68,6 +78,7 @@
                 </p>
               </div>
             </div>
+            <!-- todo end: add cards -->
           </div>
         </div>
       </header>
@@ -75,14 +86,17 @@
       <!-- popular section -->
 
       <section class="container">
-        <h1 class="section__heading">Popular Trends</h1>
+        <h2 class="section__heading">Popular Trends</h2>
         <!-- product scroll section -->
         <div class="scroll-container">
           <!-- individual card -->
+          <!-- todo: add cards -->
+
           <div class="card">
             <div class="card__banner">
               <img src="" alt="" class="banner__img" />
             </div>
+            <!-- FIXME: might have to wrap other content of card into a card__content class  -->
             <p class="card__decription">
               Wireless Headphones with Dolby Surround Sound
             </p>
@@ -100,8 +114,7 @@
               </div>
             </div>
           </div>
-          <!-- individual card -->
-          <!-- TODO: Add more card -->
+          <!-- todo end: Add more card -->
         </div>
       </section>
       <section class="container">
@@ -125,7 +138,7 @@
           <div class="offer__flag"></div>
         </div>
         <div class="section__header">
-          <h1 class="section__heading">Exclusive Offer</h1>
+          <h2 class="section__heading">Exclusive Offer</h2>
           <p class="section__decription">Offer ends in</p>
           <div class="container">
             <div class="timer">
@@ -147,8 +160,9 @@
           </div>
         </div>
       </section>
+      <!-- Try accessories section -->
       <section class="container">
-        <h1 class="section__heading">Popular Trends</h1>
+        <h2 class="section__heading">Try our other Accessories</h2>
         <div class="grid">
           <div class="gird__item">
             <img src="" alt="" class="grid__img" />
@@ -159,10 +173,10 @@
         </div>
       </section>
 
-      <!-- popular section -->
+      <!-- new arrival section -->
 
       <section class="container">
-        <h1 class="section__heading">New Arrivals</h1>
+        <h2 class="section__heading">New Arrivals</h2>
         <!-- product scroll section -->
         <div class="scroll-container">
           <!-- individual card -->
@@ -192,39 +206,108 @@
           <!-- TODO: Add more card -->
         </div>
       </section>
-<!-- TODO: This section is incomplete and copy pasted-->
-<!-- CTA Scan section -->
+      <!-- TODO: This section is incomplete and copy pasted-->
+      <!-- CTA Scan section -->
       <section class="container">
-        <h1 class="section__heading">New Arrivals</h1>
-        <!-- product scroll section -->
-        <div class="scroll-container">
-          <!-- individual card -->
-          <div class="card card--secondary">
-            <div class="card__banner">
-              <img src="" alt="" class="banner__img" />
-            </div>
-            <p class="card__decription">
-              Wireless Headphones with Dolby Surround Sound
-            </p>
-            <ul class="card__features list">
-              <li class="list__item">Truely Wireless</li>
-              <li class="list__item">Dolby Surround Sound</li>
-              <li class="list__item">13hrs of playback time</li>
-              <li class="list__item">Made in Germany</li>
-            </ul>
-            <div class="card__footer">
-              <p class="card__description card__description--price">$79.20</p>
-              <div class="CTA-container">
-                <!-- TODO: Add imag and description in button -->
-                <div class="button button--secondary button--large"></div>
-                <div class="button button--primary button--large"></div>
-              </div>
-            </div>
+        <div class="container__qr">
+          <img src="" alt="" class="container__image" />
+        </div>
+        <div class="section__header">
+          <h2 class="section__heading">Scan QR code for more</h2>
+          <p class="section__description">
+            Now you can download the official musify app.
+          </p>
+          <div class="section__CTA-container CTA-container">
+            <a href="" class="button button--img"
+              ><img src="" alt="" class="CTA-image"
+            /></a>
+            <a href="" class="button button--img"
+              ><img src="" alt="" class="CTA-image"
+            /></a>
           </div>
-          <!-- individual card -->
-          <!-- TODO: Add more card -->
         </div>
       </section>
+      <footer class="footer-container">
+        <div class="grid">
+          <div class="grid__stack">
+            <div class="grid__logo-wrapper">
+              <img src="" alt="" class="grid__logo" />
+            </div>
+          </div>
+          <div class="grid__item stack">
+            <div class="stack__entry">
+              <h6 class="stack__header">Shop</h6>
+              <ul class="stack__list list list--footer-navs">
+                <li class="list__item">Wireless</li>
+                <li class="list__item">Headphone</li>
+                <li class="list__item">Gaming</li>
+                <li class="list__item">Speakers</li>
+                <li class="list__item">Soundbars</li>
+                <li class="list__item">professional</li>
+                <li class="list__item">Offer Zone</li>
+              </ul>
+            </div>
+            <div class="stack__entry">
+              <h6 class="stack__header">Country</h6>
+              <ul class="stack__list list list--footer-navs">
+                <li class="list__item">Nepal</li>
+              </ul>
+            </div>
+          </div>
+          <div class="grid__item stack">
+            <div class="stack__entry">
+              <h6 class="stack__header">About Us</h6>
+              <ul class="stack__list list list--footer-navs">
+                <li class="list__item">Harman Corporate</li>
+                <li class="list__item">Privacy Policy</li>
+                <li class="list__item">Terms of Use</li>
+                <li class="list__item">Why Buy Direct</li>
+                <li class="list__item">JBL Sound Partners</li>
+              </ul>
+            </div>
+            <div class="stack__entry">
+              <h6 class="stack__header">Contact Us</h6>
+              <ul class="stack__list list list--footer-navs">
+                <li class="list__item">1800-102-0525</li>
+                <li class="list__item">Mon-Sun- 10AM-7PM</li>
+              </ul>
+            </div>
+            <div class="stack__entry">
+              <h6 class="stack__header">Manufactured by:</h6>
+              <ul class="stack__list list list--footer-navs">
+                <li class="list__item">
+                  Harman International Industries, Inc.
+                </li>
+                <li class="list__item">8500, Balboa Blvd,</li>
+                <li class="list__item">Northridge, CA 91329,USA</li>
+                <li class="list__item">Mon-Sun- 10AM-7PM</li>
+              </ul>
+            </div>
+          </div>
+          <div class="grid__item stack stack--row">
+            <div class="stack__entry">
+              <h6 class="stack__header">Subscribe to our Newsletter</h6>
+              <form class="CTA-container form">
+                <input type="text" class="form__input" />
+                <input type="submit" value="Subscribe" class="form__submit" />
+              </form>
+            </div>
+            <div class="stack__entry">
+              <h6 class="stack__header">Share on Social Media</h6>
+              <ul class="stack__list list list--footer-navs">
+                <li class="list__item">
+                  <img src="" alt="" class="list__logo" />
+                  <img src="" alt="" class="list__logo" />
+                  <img src="" alt="" class="list__logo" />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer__copyright">
+          &copy; 2022.Musify.All Rights Reserved
+        </div>
+      </footer>
     </div>
   </body>
 </html>
