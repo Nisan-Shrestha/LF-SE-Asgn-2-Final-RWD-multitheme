@@ -22,17 +22,17 @@
           <img src="public/img/logo.png" alt="main logo" class="navbar__logo" />
         </div>
         <ul class="navbar__nav nav">
-          <li class="nav__link nav__link--active">Home</li>
-          <li class="nav__link">Explore</li>
-          <li class="nav__link">Contact Us</li>
+          <li class="nav__link nav__link--active"><a href="">Home</a></li>
+          <li class="nav__link"><a href="">Explore</a></li>
+          <li class="nav__link"><a href="">Contact Us</a></li>
         </ul>
         <div class="navbar__actions-wrapper">
           <label class="navbar__toggle toggle" for="display-mode">
             <img src="public/icon/moon.png" class="toggle__icon" alt="" />
             <img src="public/icon/sun.png" class="toggle__icon" alt="" />
             <span class="toggle__cover toggle__cover--right"></span>
-            <input type="checkbox" id="display-mode" /> </label
-          >
+            <input type="checkbox" id="display-mode" />
+          </label>
           <div class="navbar__icons-wrapper">
             <!-- <div class="navbar__toggle toggle">
         </div> -->
@@ -66,14 +66,14 @@
             class="search__field"
           />
         </div>
-        <div class="hero__image-container desktop-only">
-          <img
-            src="public/img/hero-model.png"
-            alt="hero image of a guy looking left with headphones on"
-            class="hero__image"
-          />
+        <img
+          src="public/img/hero-model.png"
+          alt="hero image of a guy looking left with headphones on"
+          class="hero__image desktop-only"
+        />
+        <!-- <div class="hero__image-container desktop-only">
           <div class="hero__image-overlay"></div>
-        </div>
+        </div> -->
         <div class="blob-wrapper">
           <div class="hero__decorator hero__decorator--1"></div>
           <div class="hero__decorator hero__decorator--2"></div>
@@ -87,26 +87,32 @@
           </h1>
           <p class="hero__description"></p>
           <div class="hero__CTA">
-            <div class="button button--primary button--flex button--scaling">
+            <button class="button button--primary button--flex button--scaling">
               Shop Now
-            </div>
-            <div class="button button--secondary button--flex button--scaling">
+            </button>
+            <button
+              class="button button--secondary button--flex button--scaling"
+            >
               <img
                 src="public/icon/cart-orange.png"
                 alt=""
                 class="button__icon"
               />
               Add to Cart
-            </div>
+            </button>
           </div>
         </div>
         <div class="hero__footer">
-          <div class="hero__CTA hero__CTA--arrow hero__CTA--mr24 hero__CTA--order10">
-            <img
-              src="public/icon/arrow-down.png"
-              alt=""
-              class="hero__CTA-icon"
-            />
+          <div
+            class="hero__CTA hero__CTA--arrow hero__CTA--mr24 hero__CTA--order10"
+          >
+            <a href="#trends" className="">
+              <img
+                src="public/icon/arrow-down.png"
+                alt=""
+                class="hero__CTA-icon"
+              />
+            </a>
           </div>
           <div class="hero__scroll-container stack stack--scroll stack--sm">
             <!-- todo: add cards -->
@@ -181,7 +187,10 @@
       <!-- popular section -->
 
       <section class="section">
-        <h2 class="section__heading section__heading--margin-bottom">
+        <h2
+          class="section__heading section__heading--margin-bottom"
+          id="trends"
+        >
           Popular Trends
         </h2>
         <!-- product scroll section -->
@@ -213,7 +222,7 @@
                   $120
                 </p>
                 <div class="CTA-container">
-                  <div
+                  <button
                     class="button button--sm button--secondary button--flex button--scaling"
                   >
                     <img
@@ -222,12 +231,12 @@
                       class="button__icon button__icon--sm"
                     />
                     Add to Cart
-                  </div>
-                  <div
+                  </button>
+                  <button
                     class="button button--sm button--sm--bolder button--primary button--flex button--scaling"
                   >
                     Buy Now
-                  </div>
+                  </button>
                 </div>
               </div>
             </div>
@@ -259,7 +268,7 @@
                   $120
                 </p>
                 <div class="CTA-container">
-                  <div
+                  <button
                     class="button button--sm button--secondary button--flex button--scaling"
                   >
                     <img
@@ -268,12 +277,12 @@
                       class="button__icon button__icon--sm"
                     />
                     Add to Cart
-                  </div>
-                  <div
+                  </button>
+                  <button
                     class="button button--sm button--sm--bolder button--primary button--flex button--scaling"
                   >
                     Buy Now
-                  </div>
+                  </button>
                 </div>
               </div>
             </div>
@@ -304,7 +313,7 @@
                   $120
                 </p>
                 <div class="CTA-container">
-                  <div
+                  <button
                     class="button button--sm button--secondary button--flex button--scaling"
                   >
                     <img
@@ -313,12 +322,12 @@
                       class="button__icon button__icon--sm"
                     />
                     Add to Cart
-                  </div>
-                  <div
+                  </button>
+                  <button
                     class="button button--sm button--sm--bolder button--primary button--flex button--scaling"
                   >
                     Buy Now
-                  </div>
+                  </button>
                 </div>
               </div>
             </div>
@@ -349,7 +358,7 @@
                   $120
                 </p>
                 <div class="CTA-container">
-                  <div
+                  <button
                     class="button button--sm button--secondary button--flex button--scaling"
                   >
                     <img
@@ -358,12 +367,12 @@
                       class="button__icon button__icon--sm"
                     />
                     Add to Cart
-                  </div>
-                  <div
+                  </button>
+                  <button
                     class="button button--sm button--sm--bolder button--primary button--flex button--scaling"
                   >
                     Buy Now
-                  </div>
+                  </button>
                 </div>
               </div>
             </div>
@@ -394,7 +403,7 @@
                   $120
                 </p>
                 <div class="CTA-container">
-                  <div
+                  <button
                     class="button button--sm button--secondary button--flex button--scaling"
                   >
                     <img
@@ -403,12 +412,12 @@
                       class="button__icon button__icon--sm"
                     />
                     Add to Cart
-                  </div>
-                  <div
+                  </button>
+                  <button
                     class="button button--sm button--sm--bolder button--primary button--flex button--scaling"
                   >
                     Buy Now
-                  </div>
+                  </button>
                 </div>
               </div>
             </div>
@@ -552,7 +561,7 @@
                   $120
                 </p>
                 <div class="CTA-container">
-                  <div
+                  <button
                     class="button button--md button--secondary button--flex button--scaling"
                   >
                     <img
@@ -561,12 +570,12 @@
                       class="button__icon button__icon--md"
                     />
                     Add to Cart
-                  </div>
-                  <div
+                  </button>
+                  <button
                     class="button button--md button--md--bolder button--primary button--flex button--scaling"
                   >
                     Buy Now
-                  </div>
+                  </button>
                 </div>
               </div>
             </div>
@@ -600,7 +609,7 @@
                   $120
                 </p>
                 <div class="CTA-container">
-                  <div
+                  <button
                     class="button button--md button--secondary button--flex button--scaling"
                   >
                     <img
@@ -609,12 +618,12 @@
                       class="button__icon button__icon--md"
                     />
                     Add to Cart
-                  </div>
-                  <div
+                  </button>
+                  <button
                     class="button button--md button--md--bolder button--primary button--flex button--scaling"
                   >
                     Buy Now
-                  </div>
+                  </button>
                 </div>
               </div>
             </div>
@@ -648,7 +657,7 @@
                   $120
                 </p>
                 <div class="CTA-container">
-                  <div
+                  <button
                     class="button button--md button--secondary button--flex button--scaling"
                   >
                     <img
@@ -657,12 +666,12 @@
                       class="button__icon button__icon--md"
                     />
                     Add to Cart
-                  </div>
-                  <div
+                  </button>
+                  <button
                     class="button button--md button--md--bolder button--primary button--flex button--scaling"
                   >
                     Buy Now
-                  </div>
+                  </button>
                 </div>
               </div>
             </div>
@@ -696,7 +705,7 @@
                   $120
                 </p>
                 <div class="CTA-container">
-                  <div
+                  <button
                     class="button button--md button--secondary button--flex button--scaling"
                   >
                     <img
@@ -705,12 +714,12 @@
                       class="button__icon button__icon--md"
                     />
                     Add to Cart
-                  </div>
-                  <div
+                  </button>
+                  <button
                     class="button button--md button--md--bolder button--primary button--flex button--scaling"
                   >
                     Buy Now
-                  </div>
+                  </button>
                 </div>
               </div>
             </div>
@@ -744,7 +753,7 @@
                   $120
                 </p>
                 <div class="CTA-container">
-                  <div
+                  <button
                     class="button button--md button--secondary button--flex button--scaling"
                   >
                     <img
@@ -753,12 +762,12 @@
                       class="button__icon button__icon--md"
                     />
                     Add to Cart
-                  </div>
-                  <div
+                  </button>
+                  <button
                     class="button button--md button--md--bolder button--primary button--flex button--scaling"
                   >
                     Buy Now
-                  </div>
+                  </button>
                 </div>
               </div>
             </div>
@@ -798,15 +807,17 @@
           <!-- shop + country -->
           <div class="sitemap__item stack stack--footer">
             <div class="stack__entry">
-              <h6 class="stack__link stack__link--header">Shop</h6>
+              <h6 class="stack__link stack__link--header">
+                <a href="">Shop</a>
+              </h6>
               <ul class="stack__list list list--footer-navs list--no-decor">
-                <li class="stack__link">Wireless</li>
-                <li class="stack__link">Headphone</li>
-                <li class="stack__link">Gaming</li>
-                <li class="stack__link">Speakers</li>
-                <li class="stack__link">Soundbars</li>
-                <li class="stack__link">professional</li>
-                <li class="stack__link">Offer Zone</li>
+                <li class="stack__link"><a href="">Wireless</a></li>
+                <li class="stack__link"><a href="">Headphone</a></li>
+                <li class="stack__link"><a href="">Gaming</a></li>
+                <li class="stack__link"><a href="">Speakers</a></li>
+                <li class="stack__link"><a href="">Soundbars</a></li>
+                <li class="stack__link"><a href="">professional</a></li>
+                <li class="stack__link"><a href="">Offer Zone</a></li>
               </ul>
             </div>
             <div class="stack__entry desktop-only">
@@ -819,34 +830,46 @@
           <!-- support -->
           <div class="sitemap__item stack stack--footer">
             <div class="stack__entry">
-              <h6 class="stack__link stack__link--header">Support</h6>
+              <h6 class="stack__link stack__link--header">
+                <a href="">Support</a>
+              </h6>
               <ul class="stack__list list list--footer-navs list--no-decor">
-                <li class="stack__link">Order Status</li>
-                <li class="stack__link">Bulk Purchase Program</li>
-                <li class="stack__link">Buy Authentic</li>
-                <li class="stack__link">Product Support</li>
-                <li class="stack__link">Shipping & Delivery policy</li>
-                <li class="stack__link">Cancellation & Refund Policy</li>
-                <li class="stack__link">Service Center</li>
-                <li class="stack__link">Brand Stores</li>
-                <li class="stack__link">Harman Corporate</li>
+                <li class="stack__link"><a href="">Order Status</a></li>
+                <li class="stack__link">
+                  <a href="">Bulk Purchase Program</a>
+                </li>
+                <li class="stack__link"><a href="">Buy Authentic</a></li>
+                <li class="stack__link"><a href="">Product Support</a></li>
+                <li class="stack__link">
+                  <a href="">Shipping & Delivery policy</a>
+                </li>
+                <li class="stack__link">
+                  <a href="">Cancellation & Refund Policy</a>
+                </li>
+                <li class="stack__link"><a href="">Service Center</a></li>
+                <li class="stack__link"><a href="">Brand Stores</a></li>
+                <li class="stack__link"><a href="">Harman Corporate</a></li>
               </ul>
             </div>
           </div>
           <!-- about contact us manifac -->
           <div class="sitemap__item stack stack--footer">
             <div class="stack__entry">
-              <h6 class="stack__link stack__link--header">About Us</h6>
+              <h6 class="stack__link stack__link--header">
+                <a href="">About Us</a>
+              </h6>
               <ul class="stack__list list list--footer-navs list--no-decor">
-                <li class="stack__link">Harman Corporate</li>
-                <li class="stack__link">Privacy Policy</li>
-                <li class="stack__link">Terms of Use</li>
-                <li class="stack__link">Why Buy Direct</li>
-                <li class="stack__link">JBL Sound Partners</li>
+                <li class="stack__link"><a href="">Harman Corporate</a></li>
+                <li class="stack__link"><a href="">Privacy Policy</a></li>
+                <li class="stack__link"><a href="">Terms of Use</a></li>
+                <li class="stack__link"><a href="">Why Buy Direct</a></li>
+                <li class="stack__link"><a href="">JBL Sound Partners</a></li>
               </ul>
             </div>
             <div class="stack__entry">
-              <h6 class="stack__link stack__link--header">Contact Us</h6>
+              <h6 class="stack__link stack__link--header">
+                <a href="">Contact Us</a>
+              </h6>
               <ul class="stack__list list list--footer-navs list--no-decor">
                 <li class="stack__link">1800-102-0525</li>
                 <li class="stack__link">Mon-Sun- 10AM-7PM</li>
@@ -856,7 +879,7 @@
               <h6 class="stack__link stack__link--header">Manufactured by:</h6>
               <ul class="stack__list list list--footer-navs list--no-decor">
                 <li class="stack__link">
-                  Harman International Industries, Inc.
+                  <a href="">Harman International Industries, Inc.</a>
                 </li>
                 <li class="stack__link">8500, Balboa Blvd,</li>
                 <li class="stack__link">Northridge, CA 91329,USA</li>
@@ -866,9 +889,7 @@
           </div>
 
           <!-- subscribe + social -->
-          <div
-            class="sitemap__item stack stack--footer  stack--lg-row"
-          >
+          <div class="sitemap__item stack stack--footer stack--lg-row">
             <div class="stack stack__entry stack--last">
               <h6 class="stack__link stack__link--header">
                 Subscribe to our Newsletter
@@ -892,13 +913,21 @@
               </h6>
               <ul class="stack__list list list--footer-navs list--no-decor">
                 <li class="stack stack__link stack--g32">
-                  <img src="public/icon/google.png" alt="" class="list__logo" />
-                  <img src="public/icon/insta.png" alt="" class="list__logo" />
-                  <img
-                    src="public/icon/twitter.png"
-                    alt=""
-                    class="list__logo"
-                  />
+                  <a href="" className=""
+                    ><img
+                      src="public/icon/google.png"
+                      alt=""
+                      class="list__logo"
+                  /></a>
+                  <a href="" className=""
+                    ><img src="public/icon/insta.png" alt="" class="list__logo"
+                  /></a>
+                  <a href="" className=""
+                    ><img
+                      src="public/icon/twitter.png"
+                      alt=""
+                      class="list__logo"
+                  /></a>
                 </li>
               </ul>
             </div>
@@ -916,5 +945,5 @@
       </footer>
     </div>
   </body>
- <script src="script.js"></script>
+  <script src="script.js"></script>
 </html>
