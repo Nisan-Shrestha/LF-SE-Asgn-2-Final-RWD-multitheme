@@ -41,9 +41,10 @@
   font-weight: normal;
   font-style: normal;
 }
-body {
+body,
+button,a,ul,li,ol {
   font-family: "proxima_nova_rgregular", Helvetica, Arial, sans-serif;
 }
-h1 {
+h1,h2,h3,h4,h5,div,span,p {
   font-family: "proxima_nova_rgbold", Helvetica, Arial, sans-serif;
 }
