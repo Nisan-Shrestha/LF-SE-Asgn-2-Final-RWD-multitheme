@@ -18,12 +18,11 @@
   --text: #000;
   --secondary: #282828;
   --bg: #fcfcfc;
-  --button-glow: 0;
+  --button-glow: drop-shadow(2px 4px 18px rgba(241, 74, 22, 0.25));
   --card-grey-bg: #282828;
   --card-grey-shadow: 5px 10px 18px 0px rgba(0, 0, 0, 0.25);
   --cta-shadow: drop-shadow(0px 2px 8px rgba(0, 0, 0, 0.6));
-  --brightness-filter: brightness(0.117);;
-  
+  --brightness-filter: brightness(0.117);
 }
 // $main-background: #070606;
 * {
@@ -94,7 +93,7 @@
       margin-right: 24px;
     }
     &-icon {
-      filter: var(--brightness-filter)
+      filter: var(--brightness-filter);
     }
   }
 
@@ -147,6 +146,7 @@
     width: 99vw;
   }
   &__entry {
+    color: white;
     flex-direction: column;
   }
   &__link {
@@ -544,7 +544,7 @@
     }
   }
   &__heading {
-    color:white;
+    color: white;
     text-align: center;
     font-family: "Proxima Nova";
     font-size: 24px;
@@ -936,12 +936,14 @@
     }
     &__CTA {
       max-width: 520px;
-      filter: var(--cta-shadow);
       &--order10 {
         order: -1;
       }
       &--mr24 {
         margin: auto 15%;
+      }
+      &--arrow {
+        filter: var(--cta-shadow);
       }
     }
     &__footer {
@@ -1009,7 +1011,6 @@
       flex-shrink: 0;
       border-radius: 50px;
       border: 1px solid white;
-      
     }
     &--secondary {
       width: 501px;
@@ -1128,6 +1129,7 @@
       justify-content: center;
     }
     &__heading {
+      color: var(--text);
       font-size: 64px;
       letter-spacing: 1.28px;
       &--margin-bottom {
