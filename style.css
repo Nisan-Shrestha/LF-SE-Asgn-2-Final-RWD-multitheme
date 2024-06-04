@@ -429,7 +429,12 @@ a:hover {
 }
 @media (min-width: 1080px) {
   .navbar__actions-wrapper {
-    gap: 88px;
+    gap: 32px;
+  }
+}
+@media (min-width: 1440px) {
+  .navbar__actions-wrapper {
+    gap: 64px;
   }
 }
 .navbar__icons-wrapper {
