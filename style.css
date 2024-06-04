@@ -11,6 +11,7 @@
   );
   --card-grey-shadow: none;
   --cta-shadow: none;
+  --toggle-shadow: none;
   --brightness-filter: none;
 }
 
@@ -23,6 +24,7 @@
   --card-grey-bg: #282828;
   --card-grey-shadow: 5px 10px 18px 0px rgba(0, 0, 0, 0.25);
   --cta-shadow: drop-shadow(0px 2px 8px rgba(0, 0, 0, 0.6));
+  --toggle-shadow: drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.25));
   --brightness-filter: brightness(0.117);
 }
 
@@ -357,6 +359,7 @@
 .navbar__cta-icon {
   width: 18px;
   height: 18px;
+  filter: var(--brightness-filter);
 }
 .navbar__actions-wrapper {
   display: flex;
@@ -392,7 +395,8 @@
   display: inline-flex;
   width: 60px;
   height: 28px;
-  background-color: #000;
+  background-color: var(--bg);
+  box-shadow: var(--toggle-shadow);
   border-radius: 37px;
   align-items: center;
   justify-content: space-around;
@@ -605,7 +609,7 @@
   margin: 48px 28px 68px;
 }
 .section__heading {
-  color: white;
+  color: var(--text);
   font-family: "Proxima Nova";
   font-size: 46px;
   font-style: normal;
@@ -660,6 +664,7 @@
   border-radius: 50%;
 }
 .banner__flag {
+  color: white;
   display: flex;
   position: absolute;
   top: 0;
@@ -673,7 +678,6 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: var(--text);
   font-family: "Proxima Nova";
   font-size: 30px;
   font-style: normal;
@@ -763,6 +767,12 @@
   }
 }
 
+@media (min-width: 768px) {
+  .mobile-only {
+    display: none;
+  }
+}
+
 .footer-container {
   margin-top: 123px;
   background: #370665;
@@ -815,6 +825,13 @@
 }
 
 @media (min-width: 768px) {
+  .navbar {
+    top: 24px;
+  }
+  .navbar__logo-wrapper {
+    width: 125px;
+    height: 125px;
+  }
   .navbar__ham-wrapper {
     display: none;
   }
@@ -825,6 +842,14 @@
   }
   .navbar__icons-wrapper {
     gap: 20px;
+  }
+  .navbar__logo {
+    width: 120px;
+    height: 120px;
+  }
+  .navbar__cta-icon {
+    height: 30px;
+    width: 30px;
   }
   .navbar .nav {
     display: flex;
@@ -851,7 +876,7 @@
     border-bottom: 2px #fc9918 solid;
   }
   .hero {
-    padding: 297px 23px 75px 90px;
+    padding: 130px 23px 75px 90px;
   }
   .hero__search {
     display: none;
