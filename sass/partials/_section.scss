@@ -63,7 +63,7 @@
     object-fit: cover;
     margin: 42px auto;
   }
-  @media (min-height: 768px) {
+  @media (min-width: 768px) {
     &__image {
       width: 350px;
       height: 350px;
