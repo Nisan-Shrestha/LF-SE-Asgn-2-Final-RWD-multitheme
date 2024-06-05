@@ -379,6 +379,11 @@ a:hover {
 }
 @media (min-width: 768px) {
   .navbar__container {
+    padding: 0 12px;
+  }
+}
+@media (min-width: 920px) {
+  .navbar__container {
     padding: 0 40px;
   }
 }
