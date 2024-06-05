@@ -1,0 +1,131 @@
+.navbar {
+  z-index: 10;
+  position: fixed;
+  justify-content: space-between;
+  width: 100%;
+  background-color: var(--nav-bg);
+  border-radius: 0 0 20px 20px;
+  backdrop-filter: blur(12px);
+  @media (min-width: 768px) {
+    border-radius: 0 0 40px 40px;
+  }
+  // height: ;
+  &__container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    @media (min-width: 768px) {
+      padding: 0 12px;
+    }
+    @media (min-width: 920px) {
+      padding: 0 40px;
+    }
+    @media (min-width: 1280px) {
+      padding: 0 40px;
+    }
+    &--bg-overlay {
+      background: rgba($color: var(--text), $alpha: 0.05);
+      border-radius: 20px;
+    }
+  }
+  &__ham {
+    width: 21px;
+    height: 13px;
+  }
+  &__logo {
+    width: 60px;
+    height: 60px;
+    // align-self:center ;
+  }
+  &__logo-wrapper {
+    position: absolute; /* Position the centered item absolutely within the container */
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__toggle {
+    z-index: 10;
+  }
+  &__cta-icon {
+    width: 18px;
+    height: 18px;
+    filter: var(--brightness-filter);
+  }
+  &__actions-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    @media (min-width: 414px) {
+      gap: 38px;
+    }
+    @media (min-width: 768px) {
+      gap: 8px;
+    }
+    @media (min-width: 1080px) {
+      gap: 32px;
+    }
+    @media (min-width: 1440px) {
+      gap: 64px;
+    }
+  }
+  &__icons-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  @media (min-width: 768px) {
+    &__logo-wrapper {
+      width: 125px;
+      height: 125px;
+    }
+    &__ham-wrapper {
+      display: none;
+    }
+    &__logo-wrapper {
+      position: relative; /* Position the centered item absolutely within the container */
+      left: auto;
+      transform: none;
+    }
+    &__icons-wrapper {
+      gap: 4px;
+      @media (min-width: 1080px) {
+        gap: 20px;
+      }
+    }
+    &__logo {
+      width: 120px;
+      height: 120px;
+    }
+    &__cta-icon {
+      height: 30px;
+      width: 30px;
+    }
+    .nav {
+      display: flex;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      gap: 12px;
+      @media (min-width: 1024px) {
+        gap: 50px;
+      }
+      list-style-type: none;
+      padding: 0;
+      &__link {
+        color: var(--text);
+        font-size: 24px;
+        letter-spacing: 0.96px;
+        &--active {
+          border-bottom: 2px #fc9918 solid;
+        }
+      }
+    }
+  }
+}

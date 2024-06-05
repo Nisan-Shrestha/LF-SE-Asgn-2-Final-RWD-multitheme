@@ -1,0 +1,119 @@
+.button {
+  padding: 8px 12px;
+  border-radius: 20px;
+  border: 3px solid #f14a16;
+  text-align: center;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.68px;
+  filter: var(--button-glow);
+  transition: scale 0.3s ease;
+  &:hover {
+    scale: 1.1;
+  }
+  &--img {
+    height: 28px;
+    border: none;
+    filter: none;
+    & .CTA-image {
+      height: 100%;
+    }
+  }
+  &--flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+  &--primary {
+    color: #e5e5e5;
+    background: #f14a16;
+  }
+  &--secondary {
+    color: #f14a16;
+  }
+  &--scaling {
+    flex: 1 1 100px;
+  }
+  &--sm {
+    font-size: 10px;
+    letter-spacing: 0.4px;
+    padding: 8px 8px;
+    &--bolder {
+      font-size: 12px;
+      letter-spacing: 0.48px;
+    }
+  }
+  &--md {
+    font-size: 14px;
+    &--bolder {
+      font-size: 18px;
+    }
+    gap: 6px;
+  }
+  &--lg {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.72px;
+    &--bolder {
+      font-size: 21px;
+      font-weight: 700;
+      letter-spacing: 0.84px;
+    }
+  }
+
+  &__icon {
+    width: 21px;
+    height: 21px;
+    align-self: center;
+    &--sm {
+      width: 15px;
+      height: 15px;
+    }
+    &--md {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  @media (min-width: 768px) {
+    padding: 4px 8px;
+    @media (min-width: 1280px) {
+      padding: 18px 54px;
+    }
+    &--sm {
+      font-size: 16px;
+      letter-spacing: 0.4px;
+      padding: 12px 16px;
+      &--bolder {
+        font-size: 20px;
+      }
+    }
+    &--md {
+      font-size: 16px;
+      letter-spacing: 0.64px;
+      padding: 15px 21px;
+      &--bolder {
+        font-size: 20px;
+      }
+    }
+    &__icon {
+      &--sm {
+        width: 21px;
+        height: 21px;
+      }
+      &--md {
+        width: 30px;
+        height: 26px;
+      }
+    }
+    &--img {
+      height: 81px;
+      object-fit: contain;
+      // max-width: 100%;
+      padding: 0;
+    }
+  }
+  
+}
