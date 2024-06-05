@@ -1,0 +1,135 @@
+.section {
+  padding: 64px 24px 0px;
+  &--blue {
+    border-radius: 25px;
+    background: linear-gradient(91deg, #370665 0%, #35589a 100%);
+  }
+  &--padding-sm {
+    padding-top: 49px;
+  }
+  &--flex-col {
+    display: flex;
+    flex-direction: column;
+  }
+  &--centered {
+    align-items: center;
+  }
+  &__main {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin: 48px 28px 68px;
+  }
+  &__heading {
+    color: var(--text);
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 40px; /* 86.957% */
+    letter-spacing: 0.92px;
+    // margin: auto;
+    text-align: center;
+
+    &--margin-bottom {
+      margin-bottom: 60px;
+    }
+    &--alt-order {
+      order: -1;
+      margin-bottom: 54px;
+    }
+    &--sm {
+      font-size: 28px;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 1.12px;
+      margin-bottom: 43px;
+    }
+  }
+  &__subheading {
+    // color: var(--text);
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 0.72px;
+    &--sm {
+      text-align: center;
+      font-size: 26px;
+      letter-spacing: 0.78px;
+    }
+  }
+  &__image {
+    height: 140px;
+    width: 140px;
+    object-fit: cover;
+    margin: 42px auto;
+  }
+  @media (min-height: 768px) {
+    &__image {
+      width: 350px;
+      height: 350px;
+      margin: 0 auto;
+    }
+    &__header {
+      margin-top: 70px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    &__heading {
+      color: var(--text);
+      font-size: 64px;
+      letter-spacing: 1.28px;
+      &--margin-bottom {
+        margin-bottom: 103px;
+      }
+      &--margin-top {
+        margin-top: 123px;
+      }
+      &--sm {
+        margin-bottom: 143px;
+      }
+      &--md {
+        margin-bottom: 15px;
+        font-size: 56px;
+        font-weight: 700;
+        letter-spacing: 1.68px;
+      }
+    }
+    &__subheading {
+      &--sm {
+        font-size: 32px;
+        font-weight: 400;
+        letter-spacing: 0.96px;
+      }
+    }
+    @media (min-width: 1024px) {
+      &--flex-col {
+        flex-wrap: wrap;
+        height: 725px;
+        justify-content: center;
+      }
+      &__banner {
+        width: 50%;
+        &.banner {
+          order: -1;
+          max-width: 725px;
+          max-height: 720px;
+          // height: 100%;
+          // width: 100%;
+          margin: 140px auto;
+        }
+      }
+      .banner__image {
+        // order: -1;
+        max-width: 725px;
+        max-height: 720px;
+      }
+
+      .banner__flag {
+        width: 166px;
+        height: 166px;
+      }
+    }
+  }
+}
